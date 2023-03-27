@@ -1,0 +1,136 @@
+/* Start  Varibles*/
+:root {
+  --main-color: #10cab7;
+  --secondary-color: #2c4755;
+  --section-padding: 60px;
+  --section-background: #f6f6f6;
+  --main-transition: 0.3s;
+}
+/* End Varibles*/
+/* Start Components */
+
+/* End Components */
+/* Start Global Roles */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+}
+.contenar {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .contenar {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .contenar {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .contenar {
+    width: 1170px;
+  }
+}
+/* End Global Roles */
+/* Start */
+.control-btn {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #2196f3c9;
+  z-index: 2;
+}
+.control-btn span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f44336;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 10px;
+  font-size: 30px;
+  cursor: pointer;
+  text-align: center;
+  user-select: none;
+}
+.info-contaner {
+  width: 1080px;
+  display: flex;
+  background-color: #eee;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 20px auto;
+  border: 2px solid #2196f3;
+  font-size: 24px;
+  user-select: none;
+}
+.imgs-contenar {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1100px;
+  margin: 20px auto;
+  user-select: none;
+}
+.imgs-contenar.stop-clicking {
+  pointer-events: none;
+}
+.imgs-contenar .box {
+  height: 200px;
+  cursor: pointer;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+  position: relative;
+  flex: 1 0 200px;
+  margin: 0 10px 20px;
+}
+.imgs-contenar .box.flipped,
+.imgs-contenar .box.match {
+  transform: rotateY(180deg);
+  pointer-events: none;
+}
+.imgs-contenar .box .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  backface-visibility: hidden;
+  border: 5px solid #2196f3;
+}
+.imgs-contenar .box .front {
+  background-color: #333;
+  line-height: 200px;
+}
+.imgs-contenar .box .front::before {
+  content: "!";
+  font-size: 140px;
+  font-weight: bold;
+  color: white;
+}
+.imgs-contenar .box .back {
+  background-color: #607d8b;
+  transform: rotateY(180deg);
+}
+.imgs-contenar .box .back img {
+  width: 140px;
+  height: 140px;
+  margin-top: 30px;
+}
+/* End header */

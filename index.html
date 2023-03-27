@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Render ALL Elements Normally  -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Font Awwsome Library -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- Main Template Css File -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Memory Game</title>
+  </head>
+  <body>
+    <div class="control-btn">
+      <span>Start Game</span>
+    </div>
+    <div class="info-contaner">
+      <div class="name">Hello : <span></span></div>
+      <div class="tries">Wrong Tries : <span>0</span></div>
+    </div>
+
+    <div class="imgs-contenar">
+      <div class="box" data-teq="1">
+        <div class="face front"></div>
+        <div class="face back"><img src="./images/number1.png" alt="" /></div>
+      </div>
+      <div class="box" data-teq="1">
+        <div class="face front"></div>
+        <div class="face back"><img src="./images/number1.png" alt="" /></div>
+      </div>
+      <div class="box" data-teq="2">
+        <div class="face front"></div>
+        <div class="face back"><img src="./images/number2.png" alt="" /></div>
+      </div>
+      <div class="box" data-teq="2">
+        <div class="face front"></div>
+        <div class="face back"><img src="./images/number2.png" alt="" /></div>
+      </div>
+      <div class="box" data-teq="3">
+        <div class="face front"></div>
+        <div class="face back"><img src="./images/number3.png" alt="" /></div>
+      </div>
+      <div class="box" data-teq="3">
+        <div class="face front"></div>
+        <div class="face back"><img src="./images/number3.png" alt="" /></div>
+      </div>
+      <div class="box" data-teq="4">
+        <div class="face front"></div>
+        <div class="face back"><img src="./images/number4.png" alt="" /></div>
+      </div>
+      <div class="box" data-teq="4">
+        <div class="face front"></div>
+        <div class="face back"><img src="./images/number4.png" alt="" /></div>
+      </div>
+      <div class="box" data-teq="5">
+        <div class="face front"></div>
+        <div class="face back"><img src="./images/number5.png" alt="" /></div>
+      </div>
+      <div class="box" data-teq="5">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="./images/number5.png" alt="" />
+        </div>
+      </div>
+      <div class="box" data-teq="6">
+        <div class="face front"></div>
+        <div class="face back"><img src="./images/number6.png" alt="" /></div>
+      </div>
+      <div class="box" data-teq="6">
+        <div class="face front"></div>
+        <div class="face back"><img src="./images/number6.png" alt="" /></div>
+      </div>
+      <div class="box" data-teq="7">
+        <div class="face front"></div>
+        <div class="face back"><img src="./images/number7.png" alt="" /></div>
+      </div>
+      <div class="box" data-teq="7">
+        <div class="face front"></div>
+        <div class="face back"><img src="./images/number7.png" alt="" /></div>
+      </div>
+      <div class="box" data-teq="8">
+        <div class="face front"></div>
+        <div class="face back"><img src="./images/number8.png" alt="" /></div>
+      </div>
+      <div class="box" data-teq="8">
+        <div class="face front"></div>
+        <div class="face back"><img src="./images/number8.png" alt="" /></div>
+      </div>
+      <div class="box" data-teq="9">
+        <div class="face front"></div>
+        <div class="face back"><img src="./images/number9.png" alt="" /></div>
+      </div>
+      <div class="box" data-teq="9">
+        <div class="face front"></div>
+        <div class="face back"><img src="./images/number9.png" alt="" /></div>
+      </div>
+      <div class="box" data-teq="10">
+        <div class="face front"></div>
+        <div class="face back"><img src="./images/number10.png" alt="" /></div>
+      </div>
+      <div class="box" data-teq="10">
+        <div class="face front"></div>
+        <div class="face back"><img src="./images/number10.png" alt="" /></div>
+      </div>
+    </div>
+    <audio
+      id="winSound"
+      src="./audio/mixkit-achievement-bell-600.wav"
+      preload="auto"
+    ></audio>
+    <audio
+      id="failSound"
+      src="./audio/negative_beeps-6008.mp3"
+      preload="auto"
+    ></audio>
+    <audio
+      id="backSound"
+      src="./audio/305 ~Fortress of Lies.flac"
+      preload="auto"
+    ></audio>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
