@@ -19,8 +19,16 @@ let orderRang = [...Array(boxs.length).keys()];
 
 shuffle(orderRang);
 
+function flippedInStart(block) {
+  block.classList.add("flipped");
+  setTimeout(() => {
+    block.classList.remove("flipped");
+  }, 7000);
+}
+
 boxs.forEach((box, index) => {
   box.style.order = orderRang[index];
+  flippedInStart(boxs[index]);
   box.addEventListener("click", function () {
     addFlipped(box);
   });
